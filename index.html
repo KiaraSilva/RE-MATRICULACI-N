@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Matriculacion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- multistep form -->
+<form id="msform" method = "POST" action = "">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Inscripción</li>
+    <li>Estudiante</li>
+    <li>Anterior Colegio</li>
+    <li>Salud</li>
+    <li>Progenitores</li>
+    <li>Autorizados</li>
+    <li>Administrativo</li>
+    <li>Informacion</li>
+  </ul>
+  <!-- fieldsets -->
+
+
+  <fieldset>
+
+    <h2 class="fs-title">Inscripción</h2>
+
+      <h3 class="fs-subtitle">El/La estudiante se inscribira en (Seleccione lo que corresponda)</h3>
+     <div class = "grupo1DatosEstudiante">
+
+      <select class = "selectInscripcion" name="anio">
+        <option value = "primero">1°</option>
+        <option value = "segundo">2°</option>
+        <option value ="tercero">3°</option>
+        <option value ="cuarto">4°</option>
+        <option value ="quinto">5°</option>
+        <option value ="sexto">6°</option>
+        <option value ="sexto">7°</option>
+
+      </select>
+      <input class = "inputInscripcion" type="text" name="modalidad" placeholder="Modalidad" />
+    </div>
+
+    <input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+
+  </fieldset>
+
+  <fieldset>
+
+    <h2 class="fs-title">Datos del Estudiante</h2>
+  
+    <input type="text" name="nombre" placeholder="Nombre" />
+    <input type="text" name="apellido" placeholder="Apellido" />
+
+
+    <div class = "grupo1DatosEstudiante">
+      <select class = "selectDoc" name="doces">
+        <option value = "estudiantedni">DNI</option>
+        <option value = "estudiantecarnet">Carnet de extranjería</option>
+        <option value = "estudianteruc">Registro único de contribuyente</option>
+        <option value = "estudiantepasaporte">Pasaporte</option>
+    </select>
+      <input class = "inputDoc" type="text" name="docnumes" placeholder="N° Documento" />
+      <input class = "inputDoc" type="text" name="cuiles" placeholder="CUIL" />
+
+    </div>
+
+          <select class = "selectGenero" name="genero" id="">
+            <option value="F">Sexo</option>
+            <option value="F">Femenino</option>
+            <option value="M">Masculino</option>
+            <option value="X">X</option>
+        </select>
+
+        <h3 class="fs-subtitle">Datos de nacimiento</h3>
+        <div  class = "grupo1DatosEstudiante">
+          <input class = "inputNac" type="date" name="estudiantefnace" placeholder="Fecha de Nac." />
+          <input id= "inputImportantNac" class = "inputNac" type="text" name="lugarnac" placeholder="Lugar de Nac." />
+          <input class = "inputNac" type="text" name="nacionalidad" placeholder="Nacionalidad" />
+        </div>
+
+        <h3 class="fs-subtitle">Domicilio</h3>
+        <input type="text" name="escalle" placeholder="Calle" />
+        <div  class = "grupo1DatosEstudiante">
+          <input class = "inputDom" type="text" name="esnro" placeholder="Nro" />
+          <input  id= "inputImportantDom"class = "inputDom" type="text" name="espiso" placeholder="Piso" />
+          <input  id= "inputImportantDom" class = "inputDom" type="text" name="esdpto" placeholder="Dpto" />
+          <input class = "inputDom" type="text" name="escodpostal" placeholder="Cod Postal" />
+        </div>
+        <input type="text" name="eslocalidad" placeholder="Localidad" />
+
+        <div  class = "grupo1DatosEstudiante">
+          <input class = "inputNac" type="text" name="esnromanzana" placeholder="Manzana" />
+          <input id= "inputImportantNac" class = "inputNac" type="text" name="escasa" placeholder="Casa" />
+          <input class = "inputNac" type="text" name="estelefono" placeholder="Telefono" />
+        </div>
+
+      </select>
+        
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Anterior Colegio</h2>
+    <h3 class="fs-subtitle">¿El estudiante concuurrió a otro establecimiento?</h3>
+    <select class = "selectGenero" name="genero" id="">
+        <option value="Si">Si</option>
+        <option value="No">No</option>
+    </select>
+
+    <h3 class="fs-subtitle">Datos del colegio anterior</h3>
+    <input type="text" name="prov" placeholder="Provincia" />
+    <input type="text" name="distrito" placeholder="Distrito" />
+    <input type="text" name="phone" placeholder="Phone" />
+    <textarea name="address" placeholder="Address"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  
+  </fieldset>
+
+  <fieldset>
+
+    <h2 class="fs-title">Inscripción</h2>
+
+   
+     
+      <h3 class="fs-subtitle">El/La estudiante se inscribira en (Seleccione lo que corresponda)</h3>
+     <div class = "grupo1DatosEstudiante">
+
+      <select class = "selectInscripcion" name="nivel">
+        <option value = "primero">1°</option>
+        <option value = "segundo">2°</option>
+        <option value ="tercero">3°</option>
+        <option value ="cuarto">4°</option>
+        <option value ="quinto">5°</option>
+        <option value ="sexto">6°</option>
+      </select>
+      <input class = "inputInscripcion" type="text" name="modalidad" placeholder="Modalidad" />
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+
+  </fieldset>
+
+
+
+  <fieldset>
+
+    <h2 class="fs-title">Inscripción</h2>
+
+   
+     
+      <h3 class="fs-subtitle">El/La estudiante se inscribira en (Seleccione lo que corresponda)</h3>
+     <div class = "grupo1DatosEstudiante">
+
+      <select class = "selectInscripcion" name="nivel">
+        <option value = "primero">1°</option>
+        <option value = "segundo">2°</option>
+        <option value ="tercero">3°</option>
+        <option value ="cuarto">4°</option>
+        <option value ="quinto">5°</option>
+        <option value ="sexto">6°</option>
+      </select>
+      <input class = "inputInscripcion" type="text" name="modalidad" placeholder="Modalidad" />
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+
+  </fieldset>
+
+
+
+
+  <fieldset>
+
+    <h2 class="fs-title">Inscripción</h2>
+
+   
+     
+      <h3 class="fs-subtitle">El/La estudiante se inscribira en (Seleccione lo que corresponda)</h3>
+     <div class = "grupo1DatosEstudiante">
+
+      <select class = "selectInscripcion" name="nivel">
+        <option value = "primero">1°</option>
+        <option value = "segundo">2°</option>
+        <option value ="tercero">3°</option>
+        <option value ="cuarto">4°</option>
+        <option value ="quinto">5°</option>
+        <option value ="sexto">6°</option>
+      </select>
+      <input class = "inputInscripcion" type="text" name="modalidad" placeholder="Modalidad" />
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+
+  </fieldset>
+
+  <fieldset>
+
+    <h2 class="fs-title">Inscripción</h2>
+
+   
+     
+      <h3 class="fs-subtitle">El/La estudiante se inscribira en (Seleccione lo que corresponda)</h3>
+     <div class = "grupo1DatosEstudiante">
+
+      <select class = "selectInscripcion" name="nivel">
+        <option value = "primero">1°</option>
+        <option value = "segundo">2°</option>
+        <option value ="tercero">3°</option>
+        <option value ="cuarto">4°</option>
+        <option value ="quinto">5°</option>
+        <option value ="sexto">6°</option>
+      </select>
+      <input class = "inputInscripcion" type="text" name="modalidad" placeholder="Modalidad" />
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+
+  </fieldset>
+
+  <fieldset>
+
+    <h2 class="fs-title">Inscripción</h2>
+
+   
+     
+      <h3 class="fs-subtitle">El/La estudiante se inscribira en (Seleccione lo que corresponda)</h3>
+     <div class = "grupo1DatosEstudiante">
+
+      <select class = "selectInscripcion" name="nivel">
+        <option value = "primero">1°</option>
+        <option value = "segundo">2°</option>
+        <option value ="tercero">3°</option>
+        <option value ="cuarto">4°</option>
+        <option value ="quinto">5°</option>
+        <option value ="sexto">6°</option>
+      </select>
+      <input class = "inputInscripcion" type="text" name="modalidad" placeholder="Modalidad" />
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+
+  </fieldset>
+
+</form>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
